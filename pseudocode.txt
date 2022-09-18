@@ -1,0 +1,121 @@
+#include <stdio.h>    
+#include <stdlib.h>   
+ 
+int main(void)   { 
+ int makanan,minuman,total_bayar,b,total,h,i,j,k,w,x,y,z,total1,total2;  
+ integer awal:   
+ 
+printf ("=====================\n");  
+printf ("======CAFE GAUL======\n");         
+printf ("Pilih menu makanan\n");  
+printf ("1.Mie goreng\n");  
+printf ("2.Mie rebus\n");
+printf ("3.Ayam goreng\n");  
+printf ("4.Telor goreng\n"); 
+printf ("Pesan makanan(1-4): ");  
+scanf("%d", &makanan);  
+switch(makanan)   
+{
+case 1 :        
+ 
+printf ("Mie goreng\n");    
+printf ("Harga: Rp.3500\n");
+h=3500;    
+printf ("\nJumlah pembelian : "); 
+scanf("%d", &b); 
+total1=b*h; 
+printf("Total makanan= %d \n", total1); 
+printf ("========================\n");
+ 
+break;
+case 2 :   
+printf ("Mie rebus\n");  
+printf ("Harga: Rp.3000\n");
+i=3000;     
+printf ("\nJumlah pembelian : ");   
+scanf("%d", &b); 
+total1=b*i;  
+printf("Total makanan = %d\n", total1); 
+printf ("========================\n");    
+ 
+break;
+case 3 :   
+printf ("Ayam goreng\n");   
+printf ("Harga: Rp.5000\n"); 
+j=5000;  
+printf ("\nJumlah pembelian : ");    
+scanf("%d", &b);  
+total1=b*j; 
+printf("Total makanan = %d\n", total1); 
+printf ("========================\n");
+ 
+break;
+case 4 : 
+printf ("Telor goreng\n");  
+printf ("Harga: Rp.4000\n");
+k=4000;      
+printf ("Jumlah pembelian : ");
+scanf("%d", &b);   
+total1=b*k;
+printf("Total makanan = %d\n", total1);
+printf ("========================\n");
+ 
+break; 
+}
+printf("Memilih menu minuman : \n");
+printf ("5. Es teh\n");
+printf ("6. Es jeruk\n");
+printf ("7. Kopi\n");
+printf ("8. Susu Cokelat\n");
+printf("Pesan minuman(5-8): ");
+scanf("%d", &minuman);
+ 
+switch(minuman) 
+{
+case 5 : 
+printf ("Es teh\n"); 
+printf ("Harga: Rp.1000\n");
+w=1000;
+printf ("\nJumlah pembelian : ");
+scanf("%d", &b); 
+total2=b*w; 
+printf("Total minuman = %d\n", total2);  
+printf ("========================\n");
+break;
+case 6 :
+printf ("Es jeruk\n");
+printf ("\nHarga: Rp.1500\n"); 
+x=1500;   
+printf ("\n");
+printf ("\nJumlah pembelian : ");
+scanf("%d", &b);
+total2=b*x;
+printf("Total minuman = %d\n", total2);
+printf ("========================\n");
+break;
+case 7 :
+printf ("Kopi\n");
+printf ("Harga: Rp.2000\n");
+y=2000;
+printf ("Jumlah pembelian : ");
+scanf("%d", &b);
+total2=b*y;
+printf("Total minuman = %d\n", total2);
+printf ("========================\n");
+break;
+case 8 :
+printf ("Susu Cokelat\n");
+printf ("Harga: Rp.2500\n");
+z=2500;
+printf ("\nJumlah pembelian : ");
+scanf("%d", &b);
+total2=b*z;
+printf("Total minuman = %d\n", total2);
+printf ("========================\n");
+break;
+total_bayar= total1+total2; 
+printf("\nTotal pembayaran = %d", total_bayar);  
+goto awal; 
+system ("Pause"); 
+return(0);  //membalikan nilai (0);
+}
